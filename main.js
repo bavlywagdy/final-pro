@@ -6,17 +6,17 @@ const sr = ScrollReveal ({
 })
 
 
-// sr.reveal ('.text', {delay:100, origin:'top'})
-// sr.reveal ('.container form', {delay:400, origin:'left'})
-// sr.reveal ('.heading', {delay:400, origin:'top'})
-// sr.reveal ('.ride-container .box', {delay:300, origin:'top'})
-// sr.reveal ('.rented', {delay:300, origin:'top'})
-// sr.reveal ('.services-container .box', {delay:300, origin:'top'})
-// sr.reveal ('.services-container-2 .box', {delay:300, origin:'top'})
-// sr.reveal ('.services-container-3 .box', {delay:300, origin:'top'})
-// sr.reveal ('.about-container .about-text', {delay:300, origin:'top'})
-// sr.reveal ('.reviews-container', {delay:300, origin:'top'})
-
+sr.reveal ('.text', {delay:100, origin:'top'})
+sr.reveal ('.container form', {delay:400, origin:'left'})
+sr.reveal ('.heading', {delay:400, origin:'top'})
+sr.reveal ('.ride-container .box', {delay:300, origin:'top'})
+sr.reveal ('.rented', {delay:300, origin:'top'})
+sr.reveal ('.services-container .box', {delay:300, origin:'top'})
+sr.reveal ('.services-container-2 .box', {delay:300, origin:'top'})
+sr.reveal ('.services-container-3 .box', {delay:300, origin:'top'})
+sr.reveal ('.about-container .about-text', {delay:300, origin:'top'})
+sr.reveal ('.locations iframe', {delay:300, origin:'top'})
+sr.reveal ('.reviews-container', {delay:300, origin:'top'})
 
 
 

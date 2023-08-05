@@ -127,6 +127,19 @@ header{
 }
 
 
+.home .text h2 {
+  color: #fff;
+  margin-bottom:-40px;
+  margin-top: 300px;
+}
+
+
+.home .text p {
+  margin-top: 60px;
+}
+
+
+
 .rented{
   border: 1px solid lightgray;
   width: 400px;
@@ -1007,6 +1020,28 @@ color: var(--text-color);
   }
 
 
+.location-container{
+  display: grid;
+  margin-top: 1.5rem;  
+}  
+
+
+.locations h1{
+  margin-top: -30px;
+  text-align: center;
+  font-size: 34px;
+  color: var(--main-color);
+}
+
+
+.locations iframe{
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-left:370px;
+}
+
+
 .reviews-container{
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(250px,auto));
@@ -1053,3 +1088,129 @@ height: 70px;
     color: var(--main-color);
 }
 
+
+.contact-us {
+  display:flex;
+}
+
+
+.contact-us .icon-instagram {
+  margin: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-us .icon-instagram span{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0 , 0 ,0,0.1);
+}
+
+
+.contact-us .icon-instagram span i {
+  font-size: 25px;
+  line-height: 120px;
+}
+
+
+.contact-us .icon-instagram .tooltip{
+  position: absolute;
+  top: 0px;
+  background: #fff;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0 , 0 ,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+
+.contact-us .icon-instagram:hover .tooltip{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.contact-us .icon-instagram .tooltip::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: red;
+  bottom: -8px;
+  left: 50%;
+  transform:translateX(-50%) rotate(45deg);
+}
+
+
+.contact-us .icon-phone {
+  margin: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-us .icon-phone span{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0 , 0 ,0,0.1);
+}
+
+
+.contact-us .icon-phone span i {
+  font-size: 25px;
+  line-height: 120px;
+}
+
+
+.contact-us .icon-phone .tooltip{
+  position: absolute;
+  top: 0px;
+  background: #fff;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0 , 0 ,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+
+.contact-us .icon-phone:hover .tooltip{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.contact-us .icon-phone .tooltip::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: red;
+  bottom: -8px;
+  left: 50%;
+  transform:translateX(-50%) rotate(45deg);
+}
