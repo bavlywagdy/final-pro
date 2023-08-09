@@ -66,6 +66,20 @@ header{
 }
 
 
+header .logo{
+  margin-left: -40px;
+}
+
+
+.navbar .site-title{
+  color: var(--main-color);
+  margin-left: -100px;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+
+
 .navbar li{
     position: relative;
 }
@@ -112,6 +126,7 @@ header{
     background:darkblue;
     color: #fff;
     border-radius:0.5rem;
+    margin-left: -100px;
 }
 
 
@@ -292,13 +307,13 @@ header{
 }
 
 
-.ride-container .box{
+.ride-container .box-ride{
     text-align: center;
     padding: 20px;
 }
 
 
-.ride-container .box .fa-sharp{
+.ride-container .box-ride .fa-sharp{
     font-size: 34px;
     padding: 10px;
     background: #eeeff1;
@@ -307,7 +322,7 @@ header{
 }
 
 
-.ride-container .box .fa-regular{
+.ride-container .box-ride .fa-regular{
     font-size: 34px;
     padding: 10px;
     background: #eeeff1;
@@ -316,7 +331,7 @@ header{
 }
 
 
-.ride-container .box .fa-solid{
+.ride-container .box-ride .fa-solid{
     font-size: 34px;
     padding: 10px;
     background: #eeeff1;
@@ -325,14 +340,14 @@ header{
 }
 
 
-.ride-container .box h2{
+.ride-container .box-ride h2{
     font-size: 1.3rem;
     font-weight: 500;
     margin: 1.4rem 0 0.5rem;
 }
 
 
-.ride-container .box .fa-sharp:hover ,.ride-container .box .fa-solid:hover , .ride-container .box .fa-regular:hover{
+.ride-container .box-ride .fa-sharp:hover ,.ride-container .box-ride .fa-solid:hover , .ride-container .box-ride .fa-regular:hover{
     background: var(--gradient);
     color:#fff;
 } 
@@ -917,7 +932,7 @@ color: var(--text-color);
 .about-text span{
     font-size: 1.5rem;
     font-weight:500;
-    color: var(--main-color);
+    color: white;
     text-transform: uppercase;
 }
 
@@ -1213,4 +1228,95 @@ height: 70px;
   bottom: -8px;
   left: 50%;
   transform:translateX(-50%) rotate(45deg);
+}
+
+
+/* cart*/
+
+#cart {
+  /*background-color: #f9f9f9;*/
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+ /* margin: 20px auto;*/
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+
+#cart h2 {
+  margin: 0;
+  padding: 10px;
+  font-size: 24px;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart-items li:last-child {
+  border-bottom: none;
+}
+
+#cart-items li i {
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* Additional styles for the car containers */
+
+.box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.box-img img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.box h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.box p {
+  font-size: 14px;
+  color: #888;
+}
+
+.box h2 {
+  margin-top: 15px;
+  font-size: 24px;
+}
+
+.box .serv-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.box .serv-btn:hover {
+  background-color: #0056b3;
 }

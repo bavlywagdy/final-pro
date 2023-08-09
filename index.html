@@ -15,6 +15,7 @@
         <a href="#" class="logo"><img src="img/ferrari.png.png" alt=""></a>
 
         <ul class="navbar">
+            <li class="site-title">GOMYRIDE</li>
             <li><a href="#home">Home</a></li>
             <li><a href="#ride">Ride</a></li>
             <li><a href="#services">Services</a></li>
@@ -25,8 +26,14 @@
         </ul>
 
         <div class="header-btn">
-            <a href="#" class="sign-up">Sign up</a>
+            <!--<a href="#" class="sign-up">Sign up</a>-->
             <a href="#" class="sign-in">Sign In</a>
+        </div>
+
+
+        <div id="cart">
+         <i class="fa-solid fa-cart-shopping"></i>
+            <ul id="cart-items"></ul>
         </div>
 
     <!-- <div class="box-icon"><i class="fa-solid fa-bars fa-xl b-icon"></i></div> -->
@@ -72,19 +79,19 @@
         </div>
 
         <div class="ride-container">
-            <div class="box">
+            <div class="box-ride">
                 <i class="fa-sharp fa-solid fa-location-dot"></i>
                 <h2>Choose a location</h2>
                 <p>Once you've chosen your location, you'll have access to a wide selection of well-maintained and comfortable rental cars.</p>
             </div>
 
-            <div class="box">
+            <div class="box-ride">
                 <i class="fa-regular fa-calendar-days"></i>
                 <h2>Pick-Up Date</h2>
                 <p>Start your adventure now by choosing your pick-up date from the calendar!</p>
             </div>
 
-                <div class="box">
+                <div class="box-ride">
                     <i class="fa-solid fa-calendar-check"></i>
                     <h2>Booking A Car</h2>
                     <p>we have a vehicle that suits your needs and preferences. Just let us know what you're looking for, and we'll make sure you hit the road in style and comfort!</p>
@@ -94,501 +101,504 @@
     </section>
 
     <!-- rented cars-->
-    <section class="rented-section">
-        <h1>Rented Cars</h1>
+    <!--<section class="rented-section">-->
+    <!--   <h1>Rented Cars</h1>
         <div class="rented" id="rented"></div>
-    </section>
+    </section> -->
 
-    <!-- services section-->
-    <section class="services" id="services">
-        <div class="heading">
-            <span>Best Services</span>
-            <h1>Explore Out Top Deals From Top Rated Dealers</h1>
-            <h1 class="services-title">Economic Rentals</h1>
+    <!--cars-->
+
+ <!-- services section-->
+ <section class="services" id="services">
+    <div class="heading">
+        <span>Best Services</span>
+        <h1>Explore Out Top Deals From Top Rated Dealers</h1>
+        <h1 class="services-title">Economic Rentals</h1>
+    </div>
+
+    <div class="services-container">
+        <div class="box">
+            <div class="box-img">
+                <img src="img/2021-Toyota-Corolla-Sedan-GR-Sport-European-spec-0-1024x555.jpg" alt="">
+            </div>
+            <h3> 2021 Toyota Corolla</h3>
+            <p>5 Passenger , 120-hp</p>
+            <h2>$1500 <span>/month</span></h2>
+            <button class="serv-btn">
+                <span class="span-mother">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+                <span class="span-mother2">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+              </button>
         </div>
 
-        <div class="services-container">
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/2021-Toyota-Corolla-Sedan-GR-Sport-European-spec-0-1024x555.jpg" alt="">
-                </div>
-                <h3> 2021 Toyota Corolla</h3>
-                <p>5 Passenger , 120-hp</p>
-                <h2>$5800 <span>/month</span></h2>
-                <button class="serv-btn">
-                    <span class="span-mother">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                    <span class="span-mother2">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                  </button>
+        <div class="box">
+            <div class="box-img">
+                <img src="img/2021-hyundai-tucson-25-limited-awd-114-1623351417.jpg" alt="">
             </div>
-
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/2021-hyundai-tucson-25-limited-awd-114-1623351417.jpg" alt="">
-                </div>
-                <h3> 2021 Hyundai Tucson</h3>
-                <p>5 Passenger , 7-speed Automatic , 180-hp</p>
-                <h2>$7300 <span>/month</span></h2>
-                <button class="serv-btn">
-                    <span class="span-mother">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                    <span class="span-mother2">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                  </button>
-            </div>
-
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/947251.jpg" alt="">
-                </div>
-                <h3> 2022 Hyundai Elantra </h3>
-                <p> 5 Passenger , 6-speed Automatic , 126-hp</p>
-                <h2>$6500<span>/month</span></h2>
-                <button class="serv-btn">
-                    <span class="span-mother">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                    <span class="span-mother2">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                  </button>
-            </div>
-
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/2020_honda_civic_type_r-1.jpg" alt="">
-                </div>
-                <h3>2020 Honda Civic type R</h3>
-                <p> 4 Passenger , 6-speed Manual , 306-hp</p>
-                <h2>$6800 <span>/month</span></h2>
-                <button class="serv-btn">
-                    <span class="span-mother">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                    <span class="span-mother2">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                  </button>
-            </div>
-
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/2020-Nissan-Sentra-SR-Orange-Front-Right-678x381.jpg" alt="">
-                </div>
-                <h3>2020 Nissan Sentra</h3>
-                <p> 5 Passenger , CVT Automatic , 118-hp</p>
-                <h2>$4500 <span>/month</span></h2>
-                <button class="serv-btn">
-                    <span class="span-mother">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                    <span class="span-mother2">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                  </button>
-            </div>
-
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/6136062.jpg" alt="">
-                </div>
-                <h3>2019 Chevorlet Malibu</h3>
-                <p> 5 Passenger , Automatic , 160-hp</p>
-                <h2>$4000 <span>/month</span></h2>
-                <button class="serv-btn">
-                    <span class="span-mother">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                    <span class="span-mother2">
-                        <span>R</span>
-                        <span>e</span>
-                        <span>n</span>
-                        <span>t</span>
-                        <span>N</span>
-                        <span>o</span>
-                        <span>w</span>
-                    </span>
-                  </button>
-            </div>
-
+            <h3> 2021 Hyundai Tucson</h3>
+            <p>5 Passenger , 7-speed Automatic , 180-hp</p>
+            <h2>$2500 <span>/month</span></h2>
+            <button class="serv-btn">
+                <span class="span-mother">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+                <span class="span-mother2">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+              </button>
         </div>
-    </section>
 
-                <!-- section luxury-->
-                <section class="services-2" id="services">
-                    <h1 class="services-title-2">Luxury Rentals</h1>
-                    <div class="services-container-2">
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2023-Mercedes-Benz-S580-4Matic-13.avif" alt="">
-                            </div>
-                            <h3> 2022 Mercedes Benz S580</h3>
-                            <p>5 Passenger  , 4.0L v-8 biturbo 429-hp , 9-speed Automatic</p>
-                            <h2>$50000 <span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="img/947251.jpg" alt="">
+            </div>
+            <h3> 2022 Hyundai Elantra </h3>
+            <p> 5 Passenger , 6-speed Automatic , 126-hp</p>
+            <h2>$1600<span>/month</span></h2>
+            <button class="serv-btn">
+                <span class="span-mother">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+                <span class="span-mother2">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+              </button>
+        </div>
 
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/20220110061943_Rolla_Royce.jpg" alt="">
-                            </div>
-                            <h3> 2020 Rolls Royce Ghost</h3>
-                            <p>5 Passenger , v-12 591-hp , 8-speed Automatic</p>
-                            <h2>$60000<span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
-            
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2024-bmw-i7-m70-104-643d69e0edeb5.jpg" alt="">
-                            </div>
-                            <h3>2023 BMW i7</h3>
-                            <p>5 Passenger , 536-hp </p>
-                            <h2>$45000 <span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
-            
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2021-bentley-bentayga-138-1597155562.jpg" alt="">
-                            </div>
-                            <h3>2021 Bentley Bentayga</h3>
-                            <p>luxury SUVs with big , thirsty engines v-8 542-hp , 8-speed Automatic</p>
-                            <h2>$70000 <span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
-            
-                </section>
+        <div class="box">
+            <div class="box-img">
+                <img src="img/2020_honda_civic_type_r-1.jpg" alt="">
+            </div>
+            <h3>2020 Honda Civic type R</h3>
+            <p> 4 Passenger , 6-speed Manual , 306-hp</p>
+            <h2>$2000 <span>/month</span></h2>
+            <button class="serv-btn">
+                <span class="span-mother">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+                <span class="span-mother2">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+              </button>
+        </div>
 
-                <!-- #sport section-->
+        <div class="box">
+            <div class="box-img">
+                <img src="img/2020-Nissan-Sentra-SR-Orange-Front-Right-678x381.jpg" alt="">
+            </div>
+            <h3>2020 Nissan Sentra</h3>
+            <p> 5 Passenger , CVT Automatic , 118-hp</p>
+            <h2>$1200 <span>/month</span></h2>
+            <button class="serv-btn">
+                <span class="span-mother">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+                <span class="span-mother2">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+              </button>
+        </div>
 
-                <section class="services-3" id="services">
-                    <h1 class="services-title-3">Sport Rentals</h1>
-                    <div class="services-container-3">
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2022-lamborghini-huracan-sto_100807728_h.jpg" alt="">
-                            </div>
-                            <h3> 2022 Lamborghini Huracan STO</h3>
-                            <p>2 Passenger  , v-10 630-hp , 7-speed Dual-clucth</p>
-                            <h2>$90000 <span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="img/6136062.jpg" alt="">
+            </div>
+            <h3>2019 Chevorlet Malibu</h3>
+            <p> 5 Passenger , Automatic , 160-hp</p>
+            <h2>$1000 <span>/month</span></h2>
+            <button class="serv-btn">
+                <span class="span-mother">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+                <span class="span-mother2">
+                    <span>R</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>t</span>
+                    <span>N</span>
+                    <span>o</span>
+                    <span>w</span>
+                </span>
+              </button>
+        </div>
 
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2016_ferrari_488-spider_convertible_base_fq_oem_1_815.avif" alt="">
-                            </div>
-                            <h3> 2016 Ferrari 488 Spider</h3>
-                            <p>2 Passenger Convertible , 3.9L Turbo 661-hp , 7-speed Automatic Manual</p>
-                            <h2>$75000<span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
-            
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2023-porsche-911-gt3-rs-carbuzz-1029481.jpg" alt="">
-                            </div>
-                            <h3>2022 Porsche 911 GT3 RS</h3>
-                            <p>2 Passenger coupe, 502-hp , 6-speed Manual</p>
-                            <h2>$45000 <span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
-            
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2021-mercedes-amg-gt-black-series-103-1601842329.jpg" alt="">
-                            </div>
-                            <h3>2021 Mercedes-AMG GT black series</h3>
-                            <p>2 Passenger hatchback , v-8 720-hp , 7-speed dual-clucth Automatic</p>
-                            <h2>$70000 <span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
-            
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2021-bmw-m4-competition-104-1615416372.jpg" alt="">
-                            </div>
-                            <h3>2021 BMW M4 competition</h3>
-                            <p>4 Passenger coupe , 503-hp , 8-speed Automatic</p>
-                            <h2>$65000 <span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
-                        </div>
+    </div>
+</section>
 
-                        <div class="box">
-                            <div class="box-img">
-                                <img src="img/2019-dodge-challenger-srt-hellcat-redeye-comparison-104-1581425446.jpg" alt="">
-                            </div>
-                            <h3>2019 Dodge Challenger SRT Hellcat</h3>
-                            <p>5 Passenger coupe , v-8 797-hp , 8-speed Automatic with shifting mode</p>
-                            <h2>$72000 <span>/month</span></h2>
-                            <button class="serv-btn">
-                                <span class="span-mother">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                                <span class="span-mother2">
-                                    <span>R</span>
-                                    <span>e</span>
-                                    <span>n</span>
-                                    <span>t</span>
-                                    <span>N</span>
-                                    <span>o</span>
-                                    <span>w</span>
-                                </span>
-                              </button>
+            <!-- section luxury-->
+            <section class="services-2" id="services">
+                <h1 class="services-title-2">Luxury Rentals</h1>
+                <div class="services-container-2">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2023-Mercedes-Benz-S580-4Matic-13.avif" alt="">
                         </div>
+                        <h3> 2022 Mercedes Benz S580</h3>
+                        <p>5 Passenger  , 4.0L v-8 biturbo 429-hp , 9-speed Automatic</p>
+                        <h2>$7000 <span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
 
-                </section>
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/20220110061943_Rolla_Royce.jpg" alt="">
+                        </div>
+                        <h3> 2020 Rolls Royce Ghost</h3>
+                        <p>5 Passenger , v-12 591-hp , 8-speed Automatic</p>
+                        <h2>$8700<span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+        
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2024-bmw-i7-m70-104-643d69e0edeb5.jpg" alt="">
+                        </div>
+                        <h3>2023 BMW i7</h3>
+                        <p>5 Passenger , 536-hp </p>
+                        <h2>$7500 <span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+        
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2021-bentley-bentayga-138-1597155562.jpg" alt="">
+                        </div>
+                        <h3>2021 Bentley Bentayga</h3>
+                        <p>luxury SUVs with big , thirsty engines v-8 542-hp , 8-speed Automatic</p>
+                        <h2>$8200 <span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+        
+            </section>
 
+            <!-- #sport section-->
 
+            <section class="services-3" id="services">
+                <h1 class="services-title-3">Sport Rentals</h1>
+                <div class="services-container-3">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2022-lamborghini-huracan-sto_100807728_h.jpg" alt="">
+                        </div>
+                        <h3> 2022 Lamborghini Huracan STO</h3>
+                        <p>2 Passenger  , v-10 630-hp , 7-speed Dual-clucth</p>
+                        <h2>$20000 <span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2016_ferrari_488-spider_convertible_base_fq_oem_1_815.avif" alt="">
+                        </div>
+                        <h3> 2016 Ferrari 488 Spider</h3>
+                        <p>2 Passenger Convertible , 3.9L Turbo 661-hp , 7-speed Automatic Manual</p>
+                        <h2>$9000<span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+        
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2023-porsche-911-gt3-rs-carbuzz-1029481.jpg" alt="">
+                        </div>
+                        <h3>2022 Porsche 911 GT3 RS</h3>
+                        <p>2 Passenger coupe, 502-hp , 6-speed Manual</p>
+                        <h2>$18000 <span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+        
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2021-mercedes-amg-gt-black-series-103-1601842329.jpg" alt="">
+                        </div>
+                        <h3>2021 Mercedes-AMG GT black series</h3>
+                        <p>2 Passenger hatchback , v-8 720-hp , 7-speed dual-clucth Automatic</p>
+                        <h2>$16000 <span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+        
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2021-bmw-m4-competition-104-1615416372.jpg" alt="">
+                        </div>
+                        <h3>2021 BMW M4 competition</h3>
+                        <p>4 Passenger coupe , 503-hp , 8-speed Automatic</p>
+                        <h2>$17000 <span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="img/2019-dodge-challenger-srt-hellcat-redeye-comparison-104-1581425446.jpg" alt="">
+                        </div>
+                        <h3>2019 Dodge Challenger SRT Hellcat</h3>
+                        <p>5 Passenger coupe , v-8 797-hp , 8-speed Automatic with shifting mode</p>
+                        <h2>$15000 <span>/month</span></h2>
+                        <button class="serv-btn">
+                            <span class="span-mother">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                            <span class="span-mother2">
+                                <span>R</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                                <span>N</span>
+                                <span>o</span>
+                                <span>w</span>
+                            </span>
+                          </button>
+                    </div>
+
+            </section>
+
+      
+<!--location-->
                 <section class="locations" id="location">
                     <div class="heading">
                         <h1>Our Location</h1>
