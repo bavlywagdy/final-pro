@@ -1,8 +1,8 @@
 const sr = ScrollReveal ({
-    distance: '30px',
-    duration:1250,
-    delay:100,
-    reset:true
+  distance: '30px',
+  duration:1250,
+  delay:100,
+  reset:true
 })
 
 
@@ -21,7 +21,7 @@ sr.reveal ('.reviews-container', {delay:300, origin:'top'})
 
 
 // window.addEventListener('DOMContentLoaded', () => {
-            
+          
 //   const rentButtons = document.querySelectorAll('.serv-btn');
 
 //   // w hykon feh method bt3mlk remove l kol item anta bt-click 3leh
@@ -45,7 +45,7 @@ sr.reveal ('.reviews-container', {delay:300, origin:'top'})
 
 // // Renting a car
 // function rentCar(event) {
-  
+
 //   const car = event.target.closest('.box');
 
 //   // Clone the car
@@ -109,36 +109,78 @@ sr.reveal ('.reviews-container', {delay:300, origin:'top'})
 //         // Add more elements as needed
 
 
-         const rentButtons = document.querySelectorAll('.serv-btn');
+//          const rentButtons = document.querySelectorAll('.serv-btn');
 
 
-        // Add event listeners to the Rent Now buttons
-         rentButtons.forEach(button => {
-           button.addEventListener('click', addToCart);
-         });
-      
-        // // Function to add car details to the cart
-         function addToCart(event) {
-           const carContainer = event.target.closest('.box');
-           const carImage  = event.target.closest('.img');
-           const carName = carContainer.querySelector('h3').innerText;
-           const carPrice = carContainer.querySelector('h2').innerText;
-      
-         // Create a new list item for the cart
-           const cartItem = document.createElement('li');
-           cartItem.innerText = `${carName} - ${carPrice}`;
-      
-           // Add the item to the cart
-           const cart = document.getElementById('cart-items');
-           cart.appendChild(cartItem);
+//         // Add event listeners to the Rent Now buttons
+//          rentButtons.forEach(button => {
+//            button.addEventListener('click', addToCart);
+//          });
+    
+//         // // Function to add car details to the cart
+//          function addToCart(event) {
+//            const carContainer = event.target.closest('.box');
+//            const carImage  = event.target.closest('.img');
+//            const carName = carContainer.querySelector('h3').innerText;
+//            const carPrice = carContainer.querySelector('h2').innerText;
+    
+//          // Create a new list item for the cart
+//            const cartItem = document.createElement('li');
+//            cartItem.innerText = `${carName} - ${carPrice}`;
+    
+//            // Add the item to the cart
+//            const cart = document.getElementById('cart-items');
+//            cart.appendChild(cartItem);
 
-           //const carImage = document.createElement('img');
-           //carImage.className = 'rented-img';
-             //carImage.src = imgSrc;
-         }
-      
-      
-      
-      
-      
-      
+//            //const carImage = document.createElement('img');
+//            //carImage.className = 'rented-img';
+//              //carImage.src = imgSrc;
+// }
+
+
+
+// code for the shopping cart
+// const shoppingcart = document.getElementsByClassName ("shopping-cart");
+// const shoppingcartimg = document.getElementById("cart");
+// showcart = () => {
+
+// console.log("done")
+// }
+// shoppingcartimg.addEventListener("click", showcart);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const addButton = document.querySelectorAll(".serv-btn");
+  const cart = document.getElementById("cart");
+  const cartItemsContainer = document.getElementById("cartItems");
+
+  addButton.forEach(button => {
+      button.addEventListener("click", function () {
+          const carCard = this.closest(".carcard");
+          const carName = carCard.querySelector("h3").innerText;
+          const carPrice = parseFloat(this.getAttribute("data-price"));
+
+          const cartItem = document.createElement("div");
+          cartItem.classList.add("cart-item");
+          cartItem.innerHTML = `
+              <div class="cart-item-details">
+                  <h3>${carName}</h3>
+                  <p>$${carPrice.toFixed(2)}</p>
+              </div>
+              <button class="remove-item">Remove</button>
+          `;
+
+          const removeButton = cartItem.querySelector(".remove-item");
+          removeButton.addEventListener("click", function () {
+              cartItemsContainer.removeChild(cartItem);
+          });
+
+          cartItemsContainer.appendChild(cartItem);
+          //console.log("item appended");
+      });
+  });
+
+  cart.addEventListener("click", function () {
+      cartItemsContainer.classList.toggle("cart-open");
+  });
+});

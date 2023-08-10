@@ -31,9 +31,10 @@
         </div>
 
 
-        <div id="cart">
-         <i class="fa-solid fa-cart-shopping"></i>
-            <ul id="cart-items"></ul>
+        <div>
+            <ul class="navbar-right">
+                <li><a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart </a></li>
+            </ul>
         </div>
 
     <!-- <div class="box-icon"><i class="fa-solid fa-bars fa-xl b-icon"></i></div> -->
@@ -70,6 +71,8 @@
         </div>
 
     </section>
+    
+
 
     <!--ride section-->
     <section class="ride" id="ride">
@@ -95,11 +98,12 @@
                     <i class="fa-solid fa-calendar-check"></i>
                     <h2>Booking A Car</h2>
                     <p>we have a vehicle that suits your needs and preferences. Just let us know what you're looking for, and we'll make sure you hit the road in style and comfort!</p>
-                 </div>
+                </div>
 
         </div>
     </section>
 
+<div id="cartItems" class="cart-items"></div>
     <!-- rented cars-->
     <!--<section class="rented-section">-->
     <!--   <h1>Rented Cars</h1>
@@ -118,13 +122,15 @@
 
     <div class="services-container">
         <div class="box">
-            <div class="box-img">
-                <img src="img/2021-Toyota-Corolla-Sedan-GR-Sport-European-spec-0-1024x555.jpg" alt="">
+            <div class="carcard">
+                <div class="box-img">
+                    <img src="img/2021-Toyota-Corolla-Sedan-GR-Sport-European-spec-0-1024x555.jpg" alt="">
+                </div>
+                <h3> 2021 Toyota Corolla</h3>
+                <p>5 Passenger , 120-hp</p>
+                <h2>$1500 <span>/month</span></h2>
             </div>
-            <h3> 2021 Toyota Corolla</h3>
-            <p>5 Passenger , 120-hp</p>
-            <h2>$1500 <span>/month</span></h2>
-            <button class="serv-btn">
+            <button class="serv-btn" data-name="2021 Toyota Corolla" data-price="1500">
                 <span class="span-mother">
                     <span>R</span>
                     <span>e</span>
